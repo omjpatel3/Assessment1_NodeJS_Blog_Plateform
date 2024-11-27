@@ -1,0 +1,10 @@
+<%- include("layouts/header") %>
+<h1>Welcome to the Blogging Platform</h1>
+<ul>
+    <% blogs.forEach(blog => { %>
+        <li>
+            <h2><%= blog.title %></h2>
+            <p><%= blog.content %></p>
+        </li>
+    <% }); %>
+</ul>
